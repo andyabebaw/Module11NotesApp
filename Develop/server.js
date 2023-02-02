@@ -24,4 +24,15 @@ app.get('/api/notes', (req, res) => {
     res.json(notes)
 });
 
+// POST request
+app.post('/api/notes', (req, res) => {
+    notes.push(req.body);
+    fs.writeFile('./db/db.json', JSON.stringify(notes), err => {
+        if (err) {
+            console.error(err);
+        }
+    });
+    res.send(notes)
+});
+
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
