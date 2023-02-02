@@ -22,6 +22,9 @@ This website was built to keep track of notes
 
 ## Usage
 
+![alt Screenshot](./Develop/assets/homepage.png)
+![alt Screenshot](./Develop/assets/notes.png)
+
 This website can be used to view, add, and delete notes
 
 
